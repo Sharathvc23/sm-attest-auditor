@@ -1,0 +1,85 @@
+[
+  {
+    "v": 1,
+    "id": "01HXEZAUDITGENESIS00000001",
+    "ts": "2026-05-20T08:00:00.000Z",
+    "tenant": "acme-corp",
+    "actor": {
+      "namespace": "ops",
+      "value": "agent-orion",
+      "did": "did:example:ops/agent-orion",
+      "display_name": "Agent Orion"
+    },
+    "topic": "tenants/acme-corp/agents/attestations",
+    "type": "action",
+    "classification": "internal",
+    "payload": {
+      "subject": {
+        "namespace": "ops",
+        "value": "agent-orion",
+        "did": "did:example:ops/agent-orion"
+      },
+      "kind": "rule_citation",
+      "recorded_at": "2026-05-20T08:00:00.000Z"
+    },
+    "lifecycle": "anchored",
+    "evidence_ref": "evidence://ledger/acme-corp/seq/00001",
+    "envelope_hash": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+  },
+  {
+    "v": 1,
+    "id": "01HXEZAUDITDECISION0000002",
+    "ts": "2026-05-20T08:01:00.000Z",
+    "tenant": "acme-corp",
+    "actor": {
+      "namespace": "ops",
+      "value": "approver-alice",
+      "did": "did:example:ops/approver-alice",
+      "display_name": "Alice Approver"
+    },
+    "topic": "tenants/acme-corp/decisions/proposals",
+    "type": "decision",
+    "classification": "restricted",
+    "payload": {
+      "subject": {
+        "namespace": "ops",
+        "value": "approver-alice",
+        "did": "did:example:ops/approver-alice"
+      },
+      "kind": "operator_authorize",
+      "recorded_at": "2026-05-20T08:01:00.000Z"
+    },
+    "lifecycle": "committed",
+    "evidence_ref": "evidence://ledger/acme-corp/seq/00002",
+    "predecessor_hash": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1",
+    "envelope_hash": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+  },
+  {
+    "v": 1,
+    "id": "01HXEZAUDITBELIEF000000003",
+    "ts": "2026-05-20T08:02:00.000Z",
+    "tenant": "acme-corp",
+    "actor": {
+      "namespace": "consensus",
+      "value": "planner-agent",
+      "did": "did:example:consensus/planner-agent",
+      "display_name": "Planner Agent"
+    },
+    "topic": "tenants/acme-corp/agents/beliefs",
+    "type": "belief",
+    "classification": "internal",
+    "payload": {
+      "subject": {
+        "namespace": "consensus",
+        "value": "planner-agent",
+        "did": "did:example:consensus/planner-agent"
+      },
+      "kind": "belief_snapshot",
+      "recorded_at": "2026-05-20T08:02:00.000Z"
+    },
+    "lifecycle": "anchored",
+    "evidence_ref": "evidence://ledger/acme-corp/seq/00003",
+    "predecessor_hash": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+    "envelope_hash": "c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3"
+  }
+]

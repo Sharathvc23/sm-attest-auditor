@@ -1,0 +1,35 @@
+{
+  "v": 1,
+  "id": "01HXEZAUDITCHECKPOINT00001",
+  "ts": "2026-05-20T08:05:00.000Z",
+  "tenant": "acme-corp",
+  "actor": {
+    "namespace": "anchor",
+    "value": "checkpoint-scheduler",
+    "did": "did:example:anchor/checkpoint-scheduler",
+    "display_name": "Checkpoint Scheduler"
+  },
+  "topic": "tenants/acme-corp/checkpoints/tenant",
+  "type": "checkpoint",
+  "classification": "internal",
+  "payload": {
+    "subject": {
+      "namespace": "anchor",
+      "value": "checkpoint-scheduler",
+      "did": "did:example:anchor/checkpoint-scheduler"
+    },
+    "checkpoint_subject": {
+      "scope": "tenant",
+      "scope_key": "acme-corp",
+      "as_of_ts": "2026-05-20T08:05:00.000Z",
+      "covered_envelopes_count": 3
+    },
+    "merkle_root": "DEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEF",
+    "merkle_inclusion_proof_method": "rfc6962-sha256",
+    "kind": "merkle_commitment",
+    "recorded_at": "2026-05-20T08:05:00.000Z"
+  },
+  "lifecycle": "anchored",
+  "evidence_ref": "evidence://ledger/acme-corp/checkpoints/00042",
+  "envelope_hash": "d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4"
+}
