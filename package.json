@@ -1,6 +1,6 @@
 {
   "name": "@sharathvc/sm-attest-auditor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bidirectional audit drill for AAE envelope chains — React/TypeScript renderer for forward chain-walk via predecessor_hash and reverse merkle inclusion verification from checkpoint envelopes. Aligned with Project NANDA's Attestation pillar.",
   "license": "MIT",
   "author": "Sharath VC",
